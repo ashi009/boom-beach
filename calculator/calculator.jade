@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    meta(charset="utf8")
+    title 炮击伤害计算器
+    script(type="text/javascript")
+      include calculator.js
+  body
+    table
+      tbody
+        tr
+          th 战舰能量
+          td
+            input(type="range",name="energy",min="10",max="100")
+            label
+        tr
+          th 火炮等级
+          td
+            input(type="range",name="artillery_level",min="1",max="20")
+            label
+        tr
+          th 多管等级
+          td
+            input(type="range",name="barrage_level",min="1",max="16")
+            label
+        tr
+          th 方案
+          td
+            pre(id="configures")

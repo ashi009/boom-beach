@@ -1,0 +1,398 @@
+{
+  "id": 50,
+  "player": {
+    "1": {
+      "id": 1,
+      "name": "洛克菲勒",
+      "initials": "luo-ke-fei-le",
+      "level": 46,
+      "title": null,
+      "join": 0
+    },
+    "2": {
+      "id": 2,
+      "name": "淡淡",
+      "initials": "dan-dan",
+      "level": 47,
+      "title": null,
+      "join": 0
+    },
+    "3": {
+      "id": 3,
+      "name": "bobhan0910",
+      "initials": "bobhan0910",
+      "level": 43,
+      "title": null,
+      "join": 0
+    },
+    "4": {
+      "id": 4,
+      "name": "bobhan0910",
+      "initials": "bobhan0910",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "5": {
+      "id": 5,
+      "name": "袁老大",
+      "initials": "yuan-lao-da",
+      "level": 40,
+      "title": null,
+      "join": 0
+    },
+    "6": {
+      "id": 6,
+      "name": "xiaoyi",
+      "initials": "xiaoyi",
+      "level": 40,
+      "title": null,
+      "join": 0
+    },
+    "7": {
+      "id": 7,
+      "name": "叹晨星",
+      "initials": "tan-chen-xing",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "8": {
+      "id": 8,
+      "name": "漩涡鸣人",
+      "initials": "xuan-wo-ming-ren",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "9": {
+      "id": 9,
+      "name": "@八米蔚蓝",
+      "initials": "ba-mi-wei-lan",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "10": {
+      "id": 10,
+      "name": "金银岛",
+      "initials": "jin-yin-dao",
+      "level": 40,
+      "title": null,
+      "join": 0
+    },
+    "11": {
+      "id": 11,
+      "name": "广州小炮兵王xi",
+      "initials": "guang-zhou-xiao-pao-bing-wang-xi",
+      "level": 38,
+      "title": null,
+      "join": 0
+    },
+    "12": {
+      "id": 12,
+      "name": "--KuKupiG--",
+      "initials": "kukupig",
+      "level": 39,
+      "title": null,
+      "join": 0
+    },
+    "13": {
+      "id": 13,
+      "name": "qq.1779909694",
+      "initials": "qq.1779909694",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "14": {
+      "id": 14,
+      "name": "shuaiming",
+      "initials": "shuaiming",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "15": {
+      "id": 15,
+      "name": "LliangN",
+      "initials": "lliangn",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "16": {
+      "id": 16,
+      "name": "大爷",
+      "initials": "da-ye",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "17": {
+      "id": 17,
+      "name": "唯一",
+      "initials": "wei-yi",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "18": {
+      "id": 18,
+      "name": "海星",
+      "initials": "hai-xing",
+      "level": 38,
+      "title": null,
+      "join": 0
+    },
+    "19": {
+      "id": 19,
+      "name": "迷失B",
+      "initials": "mi-shi-b",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "20": {
+      "id": 20,
+      "name": "A08!紫罗",
+      "initials": "a08-zi-luo",
+      "level": 42,
+      "title": null,
+      "join": 0
+    },
+    "21": {
+      "id": 21,
+      "name": "勇哥",
+      "initials": "yong-ge",
+      "level": 38,
+      "title": null,
+      "join": 0
+    },
+    "22": {
+      "id": 22,
+      "name": "木兰生小鸡",
+      "initials": "mu-lan-sheng-xiao-ji",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "23": {
+      "id": 23,
+      "name": "灬藏龙灬",
+      "initials": "cang-long",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "24": {
+      "id": 24,
+      "name": "冰雹",
+      "initials": "bing-bao",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "25": {
+      "id": 25,
+      "name": "ray",
+      "initials": "ray",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "26": {
+      "id": 26,
+      "name": "弃爱QY",
+      "initials": "qi-ai-qy",
+      "level": 34,
+      "title": null,
+      "join": 0
+    },
+    "27": {
+      "id": 27,
+      "name": "humo",
+      "initials": "humo",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "28": {
+      "id": 28,
+      "name": "乱舞春秋",
+      "initials": "luan-wu-chun-qiu",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "29": {
+      "id": 29,
+      "name": "坤哥",
+      "initials": "kun-ge",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "30": {
+      "id": 30,
+      "name": "我很贱",
+      "initials": "wo-hen-jian",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "31": {
+      "id": 31,
+      "name": "呐里多古",
+      "initials": "ne-li-duo-gu",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "32": {
+      "id": 32,
+      "name": "无敌将军",
+      "initials": "wu-di-jiang-jun",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "33": {
+      "id": 33,
+      "name": "ltoo3",
+      "initials": "ltoo3",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "34": {
+      "id": 34,
+      "name": "摸摸达",
+      "initials": "mo-mo-da",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "35": {
+      "id": 35,
+      "name": "wkw",
+      "initials": "wkw",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "36": {
+      "id": 36,
+      "name": "cz",
+      "initials": "cz",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "37": {
+      "id": 37,
+      "name": "Lan",
+      "initials": "lan",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "38": {
+      "id": 38,
+      "name": "凸凹",
+      "initials": "tu-ao",
+      "level": 34,
+      "title": null,
+      "join": 0
+    },
+    "39": {
+      "id": 39,
+      "name": "哈哈",
+      "initials": "ha-ha",
+      "level": 34,
+      "title": null,
+      "join": 0
+    },
+    "40": {
+      "id": 40,
+      "name": "魔术师nwm",
+      "initials": "mo-shu-shi-nwm",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "41": {
+      "id": 41,
+      "name": "gxc3564",
+      "initials": "gxc3564",
+      "level": 37,
+      "title": null,
+      "join": 0
+    },
+    "42": {
+      "id": 42,
+      "name": "味道",
+      "initials": "wei-dao",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "43": {
+      "id": 43,
+      "name": "BIGboss",
+      "initials": "bigboss",
+      "level": 34,
+      "title": null,
+      "join": 0
+    },
+    "44": {
+      "id": 44,
+      "name": "Go",
+      "initials": "go",
+      "level": 36,
+      "title": null,
+      "join": 0
+    },
+    "45": {
+      "id": 45,
+      "name": "铁血",
+      "initials": "tie-xue",
+      "level": 32,
+      "title": null,
+      "join": 0
+    },
+    "46": {
+      "id": 46,
+      "name": "后程",
+      "initials": "hou-cheng",
+      "level": 33,
+      "title": null,
+      "join": 0
+    },
+    "47": {
+      "id": 47,
+      "name": "大军哥,我行!",
+      "initials": "da-jun-ge-wo-xing",
+      "level": 35,
+      "title": null,
+      "join": 0
+    },
+    "48": {
+      "id": 48,
+      "name": "变形金刚",
+      "initials": "bian-xing-jin-gang",
+      "level": 31,
+      "title": null,
+      "join": 0
+    },
+    "49": {
+      "id": 49,
+      "active": true,
+      "name": "我靠",
+      "initials": "wokao",
+      "level": 31,
+      "title": null,
+      "join": 16403
+    }
+  }
+}
