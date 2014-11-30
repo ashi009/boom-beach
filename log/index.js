@@ -1,11 +1,14 @@
 #! /usr/bin/env node
 
+require('apollojs');
+
 var han = require('han');
 var inquirer = require('inquirer');
 var async = require('async');
 var parseArgv = require('node-argv');
 var abbrev = require('abbrev');
 var chalk = require('chalk');
+var fuzzy = require('fuzzy');
 var util = require('util');
 var fs = require('fs');
 
@@ -16,7 +19,7 @@ var kLogDbPath = kRootPath + 'log.json';
 var pPlayer, pLog;
 
 /**
- * fns
+ * funcs
  */
 function fix() {
   for (var key in pPlayer.player) {
@@ -26,14 +29,16 @@ function fix() {
 }
 
 function lookup(initials) {
-  var pattern = new RegExp(initials.replace(/\W+/g, '').split('').join('.*'));
-  var match = [];
-  for (var key in pPlayer.player) {
-    var player = pPlayer.player[key];
-    if (pattern.test(player.initials))
-      match.push(player);
-  }
-  return match;
+  return fuzzy.filter(initials,
+      Object.values(pPlayer.player), {
+        extract: function(player) {
+          return player.initials;
+        }
+      }).sort(function(lhv, rhv) {
+        return rhv.score - lhv.score || lhv.index - rhv.index;
+      }).map(function(entry) {
+        return entry.original;
+      });
 }
 
 function add(name, level, initials) {
