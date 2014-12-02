@@ -24,7 +24,7 @@ var pPlayer, pLog;
 function fix() {
   for (var key in pPlayer.player) {
     var player = pPlayer.player[key];
-    delete player.active;
+    player.warn = 0;
   }
 }
 
@@ -58,7 +58,18 @@ function add(name, level, initials) {
 
 function edit(player) {
   var options = this;
-  //
+  for (var key in options) {
+    if (key in player)
+      player[key] = options[key];
+  }
+}
+
+function warn(player) {
+  player.warn++;
+}
+
+function unwarn(player) {
+  player.warn = (player.warn - 1).clamp(0);
 }
 
 function playerToString(player) {
@@ -178,10 +189,13 @@ var pCommands = {
   fix: rawHandler.bind(null, fix),
   lookup: outputHandler.bind(null, lookup),
   add: rawHandler.bind(null, add),
+  edit: playerHandler.bind(null, edit),
   setCurrentDate: rawHandler.bind(null, setCurrentDate),
   getCurrentDate: outputHandler.bind(null, getCurrentDate),
   mark: playerHandler.bind(null, mark),
   unmark: playerHandler.bind(null, unmark),
+  warn: playerHandler.bind(null, warn),
+  unwarn: playerHandler.bind(null, unwarn),
   complete: rawHandler.bind(null, complete),
   summary: rawHandler.bind(null, showSummary),
   player: playerHandler.bind(null, showPlayer),
