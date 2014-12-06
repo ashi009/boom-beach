@@ -24,12 +24,14 @@ var pPlayer, pLog;
 function fix() {
   for (var key in pPlayer.player) {
     var player = pPlayer.player[key];
-    player.warn = 0;
+    // player.warn = 0;
+    if (player.join === 0)
+      player.join = 16401;
   }
 }
 
 function lookup(initials) {
-  return fuzzy.filter(initials,
+  return fuzzy.filter(String(initials || ''),
       Object.values(pPlayer.player), {
         extract: function(player) {
           return player.initials;
@@ -42,8 +44,9 @@ function lookup(initials) {
 }
 
 function add(name, level, initials) {
+  name = String(name || '')
   if (!initials)
-    initials = han.letter(name);
+    initials = han.letter(name, '-');
   var id = pPlayer.id++;
   pPlayer.player[id] = {
     id: id,
@@ -52,7 +55,8 @@ function add(name, level, initials) {
     initials: initials,
     level: level,
     title: null,
-    join: pLog.currentDay
+    join: pLog.currentDay,
+    warn: 0
   };
 }
 
@@ -77,7 +81,7 @@ function playerToString(player) {
 }
 
 function remove(player) {
-  delete pPlayer.player[player.id];
+  pPlayer.player[player.id].leave = pLog.currentDay;
 }
 
 function setCurrentDate(date) {
@@ -111,7 +115,8 @@ function showSummary() {
   var day = pLog.day[pLog.currentDay];
   for (var key in pPlayer.player) {
     var player = pPlayer.player[key];
-    if (player.join < pLog.currentDay) {
+    if (player.join < pLog.currentDay &&
+        (!player.leave || player.leave >= pLog.currentDay)) {
       total++;
       if (day[player.id]) {
         count++;
@@ -128,6 +133,50 @@ function showSummary() {
       total);
   console.log('Lazy players:');
   console.log(lazy.map(playerToString).join('\n'));
+}
+
+function showLazy() {
+  var players = [];
+  for (var key in pPlayer.player) {
+    var player = pPlayer.player[key];
+    if (player.leave && player.leave < pLog.currentDay)
+      continue;
+    var startDay = player.join + 1;
+    var endDay = player.leave || pLog.currentDay;
+    var totalDay = endDay - startDay + 1;
+    var missedDay = 0;
+    var laybackDay = 0;
+    for (var day = startDay; day <= endDay; day++) {
+      if (!pLog.day[day][player.id]) {
+        if (pLog.complete[day]) {
+          laybackDay++;
+        } else {
+          missedDay++;
+        }
+      }
+    }
+    if (totalDay && (laybackDay || missedDay))
+      players.push({
+        player: player,
+        totalDay: totalDay,
+        missedDay: missedDay,
+        laybackDay: laybackDay,
+        score: (missedDay / totalDay) * 10 + (laybackDay / totalDay)
+      });
+  }
+  console.log('%s/%s/%s\tPlayer',
+      chalk.red('M'),
+      chalk.yellow('L'),
+      chalk.green('T'));
+  players.sort(function(lhe, rhe) {
+    return rhe.score - lhe.score;
+  }).forEach(function(entry) {
+    console.log('%s/%s/%s\t%s',
+        chalk.red(entry.missedDay),
+        chalk.yellow(entry.laybackDay),
+        chalk.green(entry.totalDay),
+        playerToString(entry.player));
+  });
 }
 
 /**
@@ -189,6 +238,7 @@ var pCommands = {
   fix: rawHandler.bind(null, fix),
   lookup: outputHandler.bind(null, lookup),
   add: rawHandler.bind(null, add),
+  remove: playerHandler.bind(null, remove),
   edit: playerHandler.bind(null, edit),
   setCurrentDate: rawHandler.bind(null, setCurrentDate),
   getCurrentDate: outputHandler.bind(null, getCurrentDate),
@@ -198,12 +248,14 @@ var pCommands = {
   unwarn: playerHandler.bind(null, unwarn),
   complete: rawHandler.bind(null, complete),
   summary: rawHandler.bind(null, showSummary),
+  lazy: rawHandler.bind(null, showLazy),
   player: playerHandler.bind(null, showPlayer),
   save: rawHandler.bind(null, save),
   quit: rawHandler.bind(null, quit)
 };
 
 var pCommandAbbrev = abbrev(Object.keys(pCommands));
+pCommandAbbrev.rm = 'remove';
 
 /**
  * routines

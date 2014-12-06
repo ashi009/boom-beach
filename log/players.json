@@ -1,5 +1,5 @@
 {
-  "id": 51,
+  "id": 57,
   "player": {
     "1": {
       "id": 1,
@@ -7,8 +7,9 @@
       "initials": "luo-ke-fei-le",
       "level": 46,
       "title": "officer",
-      "join": 0,
-      "warn": 0
+      "join": 16401,
+      "warn": 0,
+      "leave": 16408
     },
     "2": {
       "id": 2,
@@ -16,7 +17,7 @@
       "initials": "dan-dan",
       "level": 47,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "3": {
@@ -25,7 +26,7 @@
       "initials": "bobhan0910",
       "level": 43,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "4": {
@@ -34,7 +35,7 @@
       "initials": "bobhan0910",
       "level": 38,
       "title": "officer",
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "5": {
@@ -43,7 +44,7 @@
       "initials": "yuan-lao-da",
       "level": 40,
       "title": "officer",
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "6": {
@@ -52,7 +53,7 @@
       "initials": "xiaoyi",
       "level": 40,
       "title": "leader",
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "7": {
@@ -61,7 +62,7 @@
       "initials": "tan-chen-xing",
       "level": 37,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "8": {
@@ -70,7 +71,7 @@
       "initials": "xuan-wo-ming-ren",
       "level": 38,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "9": {
@@ -79,7 +80,7 @@
       "initials": "ba-mi-wei-lan",
       "level": 37,
       "title": "officer",
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "10": {
@@ -88,7 +89,7 @@
       "initials": "jin-yin-dao",
       "level": 40,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "11": {
@@ -97,7 +98,7 @@
       "initials": "guang-zhou-xiao-pao-bing-wang-xi",
       "level": 38,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "12": {
@@ -106,7 +107,7 @@
       "initials": "kukupig",
       "level": 39,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "13": {
@@ -115,7 +116,7 @@
       "initials": "qq.1779909694",
       "level": 35,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "14": {
@@ -124,7 +125,7 @@
       "initials": "shuaiming",
       "level": 37,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "15": {
@@ -133,7 +134,7 @@
       "initials": "lliangn",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "16": {
@@ -142,7 +143,7 @@
       "initials": "da-ye",
       "level": 35,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "17": {
@@ -151,7 +152,7 @@
       "initials": "wei-yi",
       "level": 37,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "18": {
@@ -160,7 +161,7 @@
       "initials": "hai-xing",
       "level": 38,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "19": {
@@ -169,7 +170,7 @@
       "initials": "mi-shi-b",
       "level": 35,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "20": {
@@ -178,7 +179,7 @@
       "initials": "a08-zi-luo",
       "level": 42,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "21": {
@@ -187,7 +188,7 @@
       "initials": "yong-ge",
       "level": 38,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "22": {
@@ -196,7 +197,7 @@
       "initials": "mu-lan-sheng-xiao-ji",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "23": {
@@ -205,7 +206,7 @@
       "initials": "cang-long",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "24": {
@@ -214,8 +215,9 @@
       "initials": "bing-bao",
       "level": 37,
       "title": null,
-      "join": 0,
-      "warn": 0
+      "join": 16401,
+      "warn": 0,
+      "leave": 16408
     },
     "25": {
       "id": 25,
@@ -223,7 +225,7 @@
       "initials": "ray",
       "level": 37,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "26": {
@@ -232,7 +234,7 @@
       "initials": "qi-ai-qy",
       "level": 34,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "27": {
@@ -241,7 +243,7 @@
       "initials": "humo",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "28": {
@@ -250,7 +252,7 @@
       "initials": "luan-wu-chun-qiu",
       "level": 37,
       "title": "officer",
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "29": {
@@ -259,7 +261,7 @@
       "initials": "kun-ge",
       "level": 37,
       "title": "officer",
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "30": {
@@ -268,7 +270,7 @@
       "initials": "wo-hen-jian",
       "level": 37,
       "title": "officer",
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "31": {
@@ -277,7 +279,7 @@
       "initials": "na-li-duo-gu",
       "level": 37,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "32": {
@@ -286,7 +288,7 @@
       "initials": "wu-di-jiang-jun",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "33": {
@@ -295,7 +297,7 @@
       "initials": "ltoo3",
       "level": 35,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "34": {
@@ -304,7 +306,7 @@
       "initials": "mo-mo-da",
       "level": 37,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "35": {
@@ -313,7 +315,7 @@
       "initials": "wkw",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "36": {
@@ -322,7 +324,7 @@
       "initials": "cz",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "37": {
@@ -331,7 +333,7 @@
       "initials": "lan",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 1
     },
     "38": {
@@ -340,7 +342,7 @@
       "initials": "tu-ao",
       "level": 34,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "39": {
@@ -349,8 +351,9 @@
       "initials": "ha-ha",
       "level": 34,
       "title": null,
-      "join": 0,
-      "warn": 0
+      "join": 16401,
+      "warn": 0,
+      "leave": 16407
     },
     "40": {
       "id": 40,
@@ -358,7 +361,7 @@
       "initials": "mo-shu-shi-nwm",
       "level": 35,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "41": {
@@ -367,7 +370,7 @@
       "initials": "gxc3564",
       "level": 37,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "42": {
@@ -376,7 +379,7 @@
       "initials": "wei-dao",
       "level": 35,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "43": {
@@ -385,7 +388,7 @@
       "initials": "bigboss",
       "level": 34,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "44": {
@@ -394,7 +397,7 @@
       "initials": "go",
       "level": 36,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "45": {
@@ -403,7 +406,7 @@
       "initials": "tie-xue",
       "level": 32,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "46": {
@@ -412,8 +415,9 @@
       "initials": "hou-cheng",
       "level": 33,
       "title": null,
-      "join": 0,
-      "warn": 0
+      "join": 16401,
+      "warn": 0,
+      "leave": 16405
     },
     "47": {
       "id": 47,
@@ -421,8 +425,9 @@
       "initials": "da-jun-ge-wo-xing",
       "level": 35,
       "title": null,
-      "join": 0,
-      "warn": 0
+      "join": 16401,
+      "warn": 0,
+      "leave": 16408
     },
     "48": {
       "id": 48,
@@ -430,14 +435,14 @@
       "initials": "bian-xing-jin-gang",
       "level": 31,
       "title": null,
-      "join": 0,
+      "join": 16401,
       "warn": 0
     },
     "49": {
       "id": 49,
       "active": true,
       "name": "我靠",
-      "initials": "wokao",
+      "initials": "wo-kao",
       "level": 31,
       "title": null,
       "join": 16403,
@@ -447,10 +452,74 @@
       "id": 50,
       "active": true,
       "name": "自己的害",
-      "initials": "zijidehai",
+      "initials": "zi-ji-de-hai",
       "level": 27,
       "title": null,
-      "join": 16404
+      "join": 16404,
+      "warn": 0,
+      "leave": 16406
+    },
+    "51": {
+      "id": 51,
+      "active": true,
+      "name": "酒伴我,别走",
+      "initials": "jiu-ban-wo-bie-zou",
+      "level": 30,
+      "title": null,
+      "join": 16406,
+      "warn": 2,
+      "leave": 16408
+    },
+    "52": {
+      "id": 52,
+      "active": true,
+      "name": "飞哥",
+      "initials": "fei-ge",
+      "level": 34,
+      "title": null,
+      "join": 16406,
+      "warn": 2,
+      "leave": 16408
+    },
+    "53": {
+      "id": 53,
+      "active": true,
+      "name": "123456789",
+      "initials": "123456789",
+      "level": 32,
+      "title": null,
+      "join": 16408,
+      "warn": 0
+    },
+    "54": {
+      "id": 54,
+      "active": true,
+      "name": "杰哥",
+      "initials": "jie-ge",
+      "level": 34,
+      "title": null,
+      "join": 16408,
+      "warn": 0
+    },
+    "55": {
+      "id": 55,
+      "active": true,
+      "name": "天堂",
+      "initials": "tian-tang",
+      "level": 34,
+      "title": null,
+      "join": 16409,
+      "warn": 0
+    },
+    "56": {
+      "id": 56,
+      "active": true,
+      "name": "虽然",
+      "initials": "sui-ran",
+      "level": 32,
+      "title": null,
+      "join": 16409,
+      "warn": 0
     }
   }
 }
