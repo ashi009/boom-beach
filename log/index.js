@@ -9,14 +9,17 @@ var parseArgv = require('node-argv');
 var abbrev = require('abbrev');
 var chalk = require('chalk');
 var fuzzy = require('fuzzy');
+var lockFile = require('lockfile');
 var util = require('util');
 var fs = require('fs');
 
 var kRootPath = __dirname + '/';
 var kPlayerDbPath = kRootPath + 'players.json';
 var kLogDbPath = kRootPath + 'log.json';
+var kLockPath = kRootPath + '.lock';
 
 var pPlayer, pLog;
+var pLockAquired;
 
 /**
  * funcs
@@ -31,8 +34,8 @@ function fix() {
 }
 
 function lookup(initials) {
-  return fuzzy.filter(String(initials || ''),
-      Object.values(pPlayer.player), {
+  var players = Object.values(pPlayer.player).filter(inTeam);
+  return fuzzy.filter(String(initials || ''), players, {
         extract: function(player) {
           return player.initials;
         }
@@ -44,7 +47,7 @@ function lookup(initials) {
 }
 
 function add(name, level, initials) {
-  name = String(name || '')
+  name = String(name || '');
   if (!initials)
     initials = han.letter(name, '-');
   var id = pPlayer.id++;
@@ -74,6 +77,11 @@ function warn(player) {
 
 function unwarn(player) {
   player.warn = (player.warn - 1).clamp(0);
+}
+
+function inTeam(player) {
+  return player.join < pLog.currentDay &&
+      (!player.leave || player.leave >= pLog.currentDay);
 }
 
 function playerToString(player) {
@@ -115,8 +123,7 @@ function showSummary() {
   var day = pLog.day[pLog.currentDay];
   for (var key in pPlayer.player) {
     var player = pPlayer.player[key];
-    if (player.join < pLog.currentDay &&
-        (!player.leave || player.leave >= pLog.currentDay)) {
+    if (inTeam(player)) {
       total++;
       if (day[player.id]) {
         count++;
@@ -278,28 +285,39 @@ function quit(code) {
 process.on('exit', function(code) {
   if (code === 0)
     save();
+  if (pLockAquired)
+    lockFile.unlock(kLockPath, function(err) {
+      console.log(err);
+    });
 });
 
 /**
  * repl
  */
-load();
+lockFile.lock(kLockPath, function(err) {
+  if (err) {
+    console.error('Failed to aquire lock');
+    process.exit(1);
+  }
+  pLockAquired = true;
+  load();
 
-async.forever(function(next) {
-  inquirer.prompt([{
-    name: 'command',
-    message: '>'
-  }], function(answers) {
-    var argv = parseArgv(answers.command, {});
-    var cmd = argv.commands.shift();
-    var handler = pCommands[pCommandAbbrev[cmd]];
-    if (!handler) {
-      console.log('Command %j not found', cmd);
-      console.log('Available commands: %s',
-          Object.keys(pCommandAbbrev).join(', '));
-      setImmediate(next);
-    } else {
-      handler(next, argv.commands, argv.options);
-    }
+  async.forever(function(next) {
+    inquirer.prompt([{
+      name: 'command',
+      message: '>'
+    }], function(answers) {
+      var argv = parseArgv(answers.command, {});
+      var cmd = argv.commands.shift();
+      var handler = pCommands[pCommandAbbrev[cmd]];
+      if (!handler) {
+        console.log('Command %j not found', cmd);
+        console.log('Available commands: %s',
+            Object.keys(pCommandAbbrev).join(', '));
+        setImmediate(next);
+      } else {
+        handler(next, argv.commands, argv.options);
+      }
+    });
   });
 });

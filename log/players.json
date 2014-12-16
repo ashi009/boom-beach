@@ -1,5 +1,5 @@
 {
-  "id": 57,
+  "id": 65,
   "player": {
     "1": {
       "id": 1,
@@ -171,7 +171,8 @@
       "level": 35,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16416
     },
     "20": {
       "id": 20,
@@ -189,7 +190,8 @@
       "level": 38,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16416
     },
     "22": {
       "id": 22,
@@ -226,7 +228,8 @@
       "level": 37,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16414
     },
     "26": {
       "id": 26,
@@ -289,7 +292,8 @@
       "level": 36,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16410
     },
     "33": {
       "id": 33,
@@ -334,7 +338,8 @@
       "level": 36,
       "title": null,
       "join": 16401,
-      "warn": 1
+      "warn": 1,
+      "leave": 16412
     },
     "38": {
       "id": 38,
@@ -398,7 +403,8 @@
       "level": 36,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16412
     },
     "45": {
       "id": 45,
@@ -519,6 +525,86 @@
       "level": 32,
       "title": null,
       "join": 16409,
+      "warn": 0
+    },
+    "57": {
+      "id": 57,
+      "active": true,
+      "name": "麦克阿瑟",
+      "initials": "mai-ke-a-se",
+      "level": 35,
+      "title": null,
+      "join": 16410,
+      "warn": 0
+    },
+    "58": {
+      "id": 58,
+      "active": true,
+      "name": "www",
+      "initials": "www",
+      "level": 34,
+      "title": null,
+      "join": 16411,
+      "warn": 0
+    },
+    "59": {
+      "id": 59,
+      "active": true,
+      "name": "后程",
+      "initials": "hou-cheng",
+      "level": 34,
+      "title": null,
+      "join": 16411,
+      "warn": 0
+    },
+    "60": {
+      "id": 60,
+      "active": true,
+      "name": "阿杰",
+      "initials": "a-jie",
+      "level": 35,
+      "title": null,
+      "join": 16413,
+      "warn": 0
+    },
+    "61": {
+      "id": 61,
+      "active": true,
+      "name": "法外狂徒",
+      "initials": "fa-wai-kuang-tu",
+      "level": 37,
+      "title": null,
+      "join": 16413,
+      "warn": 0
+    },
+    "62": {
+      "id": 62,
+      "active": true,
+      "name": "天行&豪",
+      "initials": "tian-xing-hao",
+      "level": 39,
+      "title": null,
+      "join": 16414,
+      "warn": 0
+    },
+    "63": {
+      "id": 63,
+      "active": true,
+      "name": "大刀郎",
+      "initials": "da-dao-lang",
+      "level": 37,
+      "title": null,
+      "join": 16416,
+      "warn": 0
+    },
+    "64": {
+      "id": 64,
+      "active": true,
+      "name": "大雷",
+      "initials": "da-lei",
+      "level": 34,
+      "title": null,
+      "join": 16416,
       "warn": 0
     }
   }
