@@ -1,5 +1,5 @@
 {
-  "id": 65,
+  "id": 73,
   "player": {
     "1": {
       "id": 1,
@@ -24,7 +24,7 @@
       "id": 3,
       "name": "bobhan0910",
       "initials": "bobhan0910",
-      "level": 43,
+      "level": 45,
       "title": null,
       "join": 16401,
       "warn": 0
@@ -33,7 +33,7 @@
       "id": 4,
       "name": "bobhan0910",
       "initials": "bobhan0910",
-      "level": 38,
+      "level": 41,
       "title": "officer",
       "join": 16401,
       "warn": 0
@@ -72,7 +72,8 @@
       "level": 38,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16423
     },
     "9": {
       "id": 9,
@@ -144,7 +145,8 @@
       "level": 35,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16430
     },
     "17": {
       "id": 17,
@@ -181,7 +183,8 @@
       "level": 42,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16430
     },
     "21": {
       "id": 21,
@@ -320,7 +323,8 @@
       "level": 36,
       "title": null,
       "join": 16401,
-      "warn": 0
+      "warn": 0,
+      "leave": 16427
     },
     "36": {
       "id": 36,
@@ -505,7 +509,8 @@
       "level": 34,
       "title": null,
       "join": 16408,
-      "warn": 0
+      "warn": 0,
+      "leave": 16427
     },
     "55": {
       "id": 55,
@@ -605,6 +610,88 @@
       "level": 34,
       "title": null,
       "join": 16416,
+      "warn": 0
+    },
+    "65": {
+      "id": 65,
+      "active": true,
+      "name": "Go",
+      "initials": "go",
+      "level": 38,
+      "title": null,
+      "join": 16423,
+      "warn": 0
+    },
+    "66": {
+      "id": 66,
+      "active": true,
+      "name": "高航328",
+      "initials": "gao-hang-328",
+      "level": 39,
+      "title": null,
+      "join": 16427,
+      "warn": 0
+    },
+    "67": {
+      "id": 67,
+      "active": true,
+      "name": "米石特郭",
+      "initials": "mi-shi-te-guo",
+      "level": 39,
+      "title": null,
+      "join": 16427,
+      "warn": 0
+    },
+    "68": {
+      "id": 68,
+      "active": true,
+      "name": "非伊不娶",
+      "initials": "fei-yi-bu-qu",
+      "level": 41,
+      "title": null,
+      "join": 16430,
+      "warn": 0
+    },
+    "69": {
+      "id": 69,
+      "active": true,
+      "name": "大王",
+      "initials": "da-wang",
+      "level": 36,
+      "title": null,
+      "join": 16432,
+      "warn": 0,
+      "leave": 16438
+    },
+    "70": {
+      "id": 70,
+      "active": true,
+      "name": "苍泪云痕",
+      "initials": "cang-lei-yun-hen",
+      "level": 39,
+      "title": null,
+      "join": 16436,
+      "warn": 0,
+      "leave": 16438
+    },
+    "71": {
+      "id": 71,
+      "active": true,
+      "name": "肖先生",
+      "initials": "xiao-xian-sheng",
+      "level": 43,
+      "title": null,
+      "join": 16440,
+      "warn": 0
+    },
+    "72": {
+      "id": 72,
+      "active": true,
+      "name": "大名鼎鼎",
+      "initials": "da-ming-ding-ding",
+      "level": 35,
+      "title": null,
+      "join": 16441,
       "warn": 0
     }
   }
